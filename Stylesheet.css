@@ -5,7 +5,6 @@
     padding: 5px;
   }
   .topnav a {
-    background-color: white;
     float: right;
     color: black;
     text-align: center;
@@ -15,13 +14,11 @@
   }
  
   .topnav a:hover {
-    background-color: #ddd;
     color: black;
   }
   
   .topnav a.active {
-    background-color: #D28835;
-    color: white;
+    color: black;
   }  
   .topnav .logo-link{
     margin: auto;
@@ -29,3 +26,7 @@
     float: left;
     background-color: transparent;
   }
+  #meny-bar-farge{
+    background-color: rgb(255, 204, 0);
+  }
+  /*Inspirert fra W3Schools https://www.w3schools.com/howto/howto_js_topnav.asp*/
