@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Velkommen til Pilstredet 35</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+         body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            
+         }
+         .header{
+            position: sticky;
+            top:0;
+            left:0;
+            right:0;
+            box-sizing: border-box;
+            background-color: rgb(207, 254, 188);
+            bottom: border;
+            
+         }
+         .headermenu{
+            display: flex;
+            justify-content: center;
+            border-bottom: 4px
+            solid rgb(128, 188, 121);
+            padding: 0 1% 0 1%;
+         }
+         .navKnapp{
+            padding-top: 2%;
+            padding-bottom: 2%;
+         }
+         .navKnapp:hover{
+            background-color: rgb(24, 62, 21);
+         }
+         .navKnapp a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+            padding: 1.5rem;
+         }
+         .navKnapp a:hover{
+            color: white;
+         }
+         .article{
+            margin: 0 10% 0 10%;
+            font-size: 1.2rem;
+            margin-bottom: 20vh;
+            
+         }
+         .introImage{
+            width: 100%
+         }
+         .imageText{
+            color: rgba(0, 0, 0, 0.801);
+            margin-top: 0;
+            font-size: 1rem;
+        }
+         .gridOfDifferentPages{
+            display: grid;
+            grid-template-columns: 48% 48%;
+            grid-gap: 4%;
+            margin-bottom: 10rem
+         }
+         
+         .differentPageCard{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-sizing: border-box;
+            border: 3px solid rgba(0, 0, 0, 0.6);
+            padding: 5% 5% 5% 5%;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3) ;
+         }
+         
+         .differentPageCard>img{
+            width: 100%;
+         }
+         
+         .differentPageCard>a{
+            box-sizing: border-box;
+            display: block;
+            margin-top: auto;
+            text-align: center;
+            border: 2px solid rgb(128, 188, 121);
+            padding: 2%;
+            color: black;
+            text-decoration: none;
+            background-color: rgb(207, 254, 188);
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            
+         }
+         .differentPageCard>a:hover{
+            background-color: rgb(24, 62, 21);
+            color: white;
+         }
+         .differentPageCard>p{
+            margin-top:0;
+            margin-bottom: 20px;
+         }
+         .differentPageCard>h2{
+            margin-bottom: 1%;
+            margin-top: 1%;
+         }
+         .footer{
+            box-sizing:border-box;
+            background-color: rgb(207, 254, 188);
+            border-top: 4px solid rgb(128, 188, 121);
+            font-size: 1.3rem;
+            text-align: center;
+            padding-bottom: 4%;
+            bottom: 0;
+         }
+        
+         @media (max-width:750px){
+            .header{
+                position: static;
+            }
+            .headermenu{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            }
+            .gridOfDifferentPages{
+                grid-template-columns: 100%;
+            }
+            .differentPageCard{
+            box-sizing: border-box;
+            border: 3px solid rgba(0, 0, 0, 0.6);
+            padding: 5% 5% 5% 5%;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3) ;
+            }
+            #lastPageCard{
+            margin-bottom: 10rem;
+            }
+            
+        }
+        </style>
+        
+    </head>
+    <body>
+        <header class="header">
+            <nav class="headermenu">
+                <div class="navKnapp">
+                    <a href="PlaceOnCampus.html">Place On Campus</a>
+                </div>
+                <div class="navKnapp">
+                    <a href="Topical.html">Topical</a>
+                </div>
+                <div class="navKnapp">
+                    <a href="Accessibility.html">Accessibility</a>
+                </div>
+                <div class="navKnapp">
+                    <a href="Introduction.html">Introduction</a>
+                </div>
+            </nav>
+        </header>
+        <article class="article">
+            <img class="introImage" src="images/introductionBilde.png" alt="lettering display of OsloMet at Pilstredet">
+            <p class="imageText">Foto: xxx</p>
+            <h1>Computer Sciences</h1>
+            <h2>A brief insight into the life of a computer science major at OsloMet</h2>
+            
+            <div class="gridOfDifferentPages">
+                <div class="differentPageCard">
+                    <img src="images/introductionBilde.png" alt="et sted på OsloMet sin campus">
+                    <p class="imageText">Foto:</p>
+                    <h2>A Place on Campus</h2>
+                    <p>Have you ever whondered where computer science majors spend their time at the univercity...</p>
+                    <a href="PlaceOnCampus.html">Show me more</a>
+                </div>
+                <div class="differentPageCard">
+                    <img src="images/introductionBilde.png" alt="et sted på OsloMet sin campus">
+                    <p class="imageText">Foto:</p>
+                    <h2>A Place on Campus 2</h2>
+                    <p>Where else could a IT student spend their time...</p>
+                    <a href="PlaceOnCampus.html">Show me more</a>
+                </div>
+                <div class="differentPageCard">
+                    <img src="images/introductionBilde.png" alt="et sted på OsloMet sin campus">
+                    <p class="imageText">Foto:</p>
+                    <h2>Accessibility</h2>
+                    <p>How does this page accomodate it self for different user needs...</p>
+                    <a href="Accessibility.html">Show me more</a>
+                </div>
+                <div class="differentPageCard" id="lastPageCard">
+                    <img src="images/introductionBilde.png" alt="et sted på OsloMet sin campus">
+                    <p class="imageText">Foto:</p>
+                    <h2>Technology and society</h2>
+                    <p>A mandatory class for all computer science majors is technology and society, bu what can you learn...</p>
+                    <a href="Topical.html">Show me more</a>
+                </div>
+            </div>
+        </article>
+        <footer class="footer">
+            <p>Final Assigment - Data 1200 - OsloMet høst 2023</p>
+        </footer>
+    </body>
+</html>
