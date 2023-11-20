@@ -1,8 +1,11 @@
 .topnav {
+    background-color: rgb(255, 204, 0);
     overflow: hidden;
     margin: auto;
-    width: 99%;
+    width: 100%;
     padding: 5px;
+    position: fixed;
+    top: 0;
   }
   .topnav a {
     float: right;
@@ -25,8 +28,5 @@
     padding: 1px 1px;
     float: left;
     background-color: transparent;
-  }
-  #meny-bar-farge{
-    background-color: rgb(255, 204, 0);
   }
   /*Inspirert fra W3Schools https://www.w3schools.com/howto/howto_js_topnav.asp*/

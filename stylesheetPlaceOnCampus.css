@@ -1,0 +1,146 @@
+/* Lager en funskjon som heter topnav som vil være fundamentet til menybaren min
+jeg setter bakgrunnsfarge som gul, 
+width som 100% for at den strekker seg over hele skjermen,
+padding er 5px for mellomrom mellom knapper, 
+positsionen er sticky som gjør at den er på toppen av skjermen til en hver tid og h1 ikke forsvinner under menybaren,
+top er 0 som gjør at den alltid er helt på toppen av skjermen, 
+display er flex som lar meg bestemme hvor jeg vil at innholdet mitt skal være, 
+justify-content gjør at innholdet blir plassert i midten. */
+header{
+    background-color: rgb(228, 200, 123);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+}
+.topnav {
+    display: flex;
+    justify-content: center;
+  }
+  /* topnav a lar meg definere de enkelte knappene og de arver verdiene til topnav.
+  color gjør at skriften er svart, 
+  text-algin gjør at teksten er i midten av sitt omeråde,
+  padding definerer hvor mye "tomt" rom det er rundt skriften, 
+  og font-size sier hvor stor skriften er.  */
+  .topnav a {
+    color: black;
+    text-align: center;
+    padding: 19px 14px;
+    font-size: 17px;
+  }
+  /* Når du holder musepeker over en knapp skifter den farge til en mørkere gul. */
+  .topnav a:hover {
+    background-color: rgb(184, 150, 15);
+  }
+  /*Inspirert fra W3Schools https://www.w3schools.com/howto/howto_js_topnav.asp*/
+
+  /* I body har jeg satt margin til 0 sånn at bakgrunnsfargen går helt til enden av skjermen, 
+  en font som er universal for hele siden, 
+  og linje høyde sånn at teksten er lett leselig */
+body{
+    background-color: rgb(223, 214, 167);
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;  
+    font-size: 16px;       
+}
+/* h1 har en skrift størrelse på 100px. */
+h1{
+    font-size: 100px;
+    margin-left: 25px;
+}
+/* h2 har en skrift størrelse på 75px. */
+h2{
+    font-size: 75px;
+    margin: 5px;
+}
+/* font-size er 1.35vw som gjør at den justerer seg etter størrelsen på skjermen
+og teksten justerer seg etter størrelsen på skjermen og har en bredde på 600px */
+p{
+    font-size: 1.35vw;
+}
+/* hr lager en linje som er helt svart og har en høyde på 2px */
+hr{
+    color: black;
+    background-color: black;
+    margin: 0;
+    height: 2px;
+    border: 0;
+}
+/* footer blir satt i midten av skjermen */
+footer{
+    text-align: center;
+}
+
+.poc-row-container{
+    margin: 20px;
+    text-align: center;
+    border-bottom: dashed black 1px;
+}
+.poc-row-grid2{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+/* Flex-container lager boxer som er ved siden av hverandre som kan innholde tekst, bilder eller annet */
+.flex-container{
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    position: relative;
+}
+.fc-left {
+    align-items: center;
+}
+.fc-right {
+    
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.bildetekst {
+    margin-top: 5px;
+}
+/* Bildet justerer seg etter størrelesen på vinduet og har en størrelse på 80% */
+img{
+    object-fit: cover;
+    height: auto;
+    width: 80%;
+}
+
+
+
+@media all and (max-width: 1000px) {
+    /* topnavn endrer seg til å være under hverandre istedet for ved siden av hverandre */
+    .topnav {
+        flex-direction: column;
+        padding: 0.7rem 0;
+    }
+    /* h1 endrer til en mindre størrelse */
+    h1{
+        font-size: 50px;
+    }
+    /* h2 endrer til en mindre størrelse */
+    h2{
+        font-size: 25px;
+    }
+    /* p tar mindre bredde av skjermen */
+    p{
+        width: 300px;
+    }
+    /* alt innhold i flex-container vil bli plassert under hverandre istedet for ved siden av hverandre */
+    .flex-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
