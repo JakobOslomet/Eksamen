@@ -6,39 +6,6 @@ Malena:
         På alle <p></p> funskjonen dine bruker du klassen artictleText. Du kan vurdere og gi klassen p alle disse verdiene istedet.
 
         
-        Også når du lager navKnappene dine tror jeg ikke du trenger en div for hver knapp, men heller kan ha alle i samme div.
-        <header class="header">
-            <nav class="headermenu">
-                <div class="navKnapp">
-                    <a href="Introduction.html">Home</a>
-                </div>
-                <div class="navKnapp">
-                    <a href="PlaceOnCampus.html">Place On Campus</a>
-                </div>
-                <div class="navKnapp">
-                    <a href="placeOnCampus2.html">Place 2</a>
-                </div>
-                <div class="navKnapp">
-                    <a href="Topical.html">Topical</a>
-                </div>
-                <div class="navKnapp">
-                    <a href="Accessibility.html">Accessibility</a>
-                </div>
-            </nav>
-        </header>
-
-        Tror du istedet kan skrive:
-        <header class="header">
-            <nav class="headermenu">
-                <div class="navKnapp">
-                    <a href="Introduction.html">Home</a>
-                    <a href="PlaceOnCampus.html">Place On Campus</a>
-                    <a href="placeOnCampus2.html">Place 2</a>
-                    <a href="Topical.html">Topical</a>
-                    <a href="Accessibility.html">Accessibility</a>
-                </div>
-            </nav>
-        </header>
         Dette gjør koden litt enklere og lese og fjerner unødvendigheter hvis dette funker!
 
         IntroducionBilde.png er også 4.5mb. hvis du kompirmerer det ned til under 1mb så er det fint.
