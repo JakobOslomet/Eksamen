@@ -29,8 +29,8 @@ header{
    background-color: rgb(24, 62, 21);
 }
 .activePage{
-   padding-top: 1rem;
-   padding-bottom: 1rem;
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
    background-color: rgb(24, 62, 21);
 }
 .navKnapp a, .activePage a{
@@ -135,13 +135,13 @@ header{
 /*different screen sizes*/
 @media all and (max-width:500px){
    .header{
-       position: static;
+      position: static;
    }
    .headermenu{
-       flex-direction: column;
+      flex-direction: column;
    }
-   .navKnapp{
-       padding: 0.7rem 0 0.7rem 0;
+   .navKnapp, .activePage{
+      padding: 0.7rem 0 0.7rem 0;
    }
    .article{
        margin: 1rem 7vw 5rem 7vw;
@@ -168,8 +168,8 @@ header{
    .headermenu{
        flex-direction: column;
    }
-   .navKnapp{
-       padding: 0.7rem 0 0.7rem 0;
+   .navKnapp, .activePage{
+      padding: 0.7rem 0 0.7rem 0;
    }
    .gridOfDifferentPages{
        grid-template-columns: 100%;
