@@ -45,7 +45,7 @@
          }
          .article{
             box-sizing: border-box; 
-            margin: 1rem 10vw 20vh 10vw;
+            margin: 1rem 10vw 5rem 10vw;
             font-size: 1.2rem;         
          }
          .introImage{
@@ -61,14 +61,11 @@
             text-decoration: underline;
             
          }
-         .articleText{
-            font-size: 1.2rem;
-         }
          .gridOfDifferentPages{
             display: grid;
-            grid-template-columns: 48% 48%;
-            grid-gap: 4%;
-            margin: 3rem 0 3rem 0;
+            grid-template-columns: 100%;
+            grid-gap: 3rem;
+            margin: 0 20vw 5vh 20vw ;
          }
          
          .differentPageCard{
@@ -175,7 +172,7 @@
             .gridOfDifferentPages{
                 grid-template-columns: 100%;
                 grid-gap: 2rem;
-                margin: 3rem 10% 0 10% ;
+                margin: 0 20vw 5vh 20vw ;
             }
             .footer{
                 flex-direction: column;
@@ -185,13 +182,14 @@
                 margin: 0.4rem 0 0.4rem 0;
             }
          }
-         @media all and (min-width:1100px){
+         @media all and (min-width:1050px){
             .article{
-                margin: 1rem 20vw 20vh 20vw;
+                margin: 1rem 20vw 5rem 20vw;
             }
             .gridOfDifferentPages{
-                grid-template-columns: 47% 47%;
-                grid-gap: 6%;
+                grid-template-columns: 31% 31% 31%;
+                grid-gap: 4.5%;
+                margin: 0 10vw 5vh 10vw;
             }
          }
         </style>
@@ -239,52 +237,45 @@
                 visit one of our other pages below. There we go into more detail for all the topics mentioned in the
                 paragraph above.  
             </p>
-            <div class="gridOfDifferentPages">
-                <div class="differentPageCard">
-                    <img src="images/introductionBilde.png" alt="et sted på OsloMet sin campus">
-                    <p class="cardImageText">Foto:</p>
-                    <h3>A Place on Campus</h3>
-                    <p class="cardText">Have you ever whondered where computer science majors spend their time at the univercity...</p>
-                    <a href="PlaceOnCampus.html">Show me more</a>
-                </div>
-                <div class="differentPageCard">
-                    <img src="images/introductionBilde.png" alt="et sted på OsloMet sin campus">
-                    <p class="cardImageText">Foto:</p>
-                    <h3>A Place on Campus 2</h3>
-                    <p class="cardText">Where else could a IT student spend their time...</p>
-                    <a href="PlaceOnCampus.html">Show me more</a>
-                </div>
-                <div class="differentPageCard">
-                    <img src="images/accessibilityHome.png" alt="6 animated people, including one person in a wheelchair
-                     and one blind person, are standing together supposed to illustrate the idea of accessibility.">
-                    <p class="cardImageText">
-                        Foto: 
-                        <a href="https://www.freepik.com/free-vector/men-women-welcoming-people-with-disabilities-group-people-meeting-blind-female-character-male-wheelchair_16375447.htm#query=accessibility&position=5&from_view=search&track=sph" 
-                        target="_blank">
-                            pch.vector / Freepik 
-                        </a> 
-                    </p>
-                    <h3>Accessibility</h3>
-                    <p class="cardText">Creating accessible web-pages was a key priority in developing this site to ensure that anyone 
-                        can use the service without major barriers.</p>
-                    <a href="Accessibility.html">Show me more</a>
-                </div>
-                <div class="differentPageCard" id="lastPageCard">
-                    <img src="images/techAndSosHome.png" alt="A man standing in a thinking position whilst playing chess with a 
-                    robot arm">
-                    <p class="cardImageText">
-                        Foto:
-                        <a href="https://www.pexels.com/nb-no/bilde/eldre-strategisk-spille-leke-8438918/"
-                        target="_blank">
-                        Pavel Danilyuk / Pexels
-                        </a>
-                    </p>
-                    <h3>Technology and society</h3>
-                    <p class="cardText">A mandatory class for all computer science majors is technology and society, bu what can you learn...</p>
-                    <a href="Topical.html">Show me more</a>
-                </div>
-            </div>
         </article>
+        <div class="gridOfDifferentPages">
+            <div class="differentPageCard">
+                <img src="images/introductionBilde.png" alt="et sted på OsloMet sin campus">
+                <p class="cardImageText">Foto:</p>
+                <h3>A Place on Campus</h3>
+                <p class="cardText">Have you ever whondered where computer science majors spend their time at the univercity...</p>
+                <a href="PlaceOnCampus.html">Show me more</a>
+            </div>
+            <div class="differentPageCard">
+                <img src="images/accessibilityHome.png" alt="6 animated people, including one person in a wheelchair
+                 and one blind person, are standing together supposed to illustrate the idea of accessibility.">
+                <p class="cardImageText">
+                    Foto: 
+                    <a href="https://www.freepik.com/free-vector/men-women-welcoming-people-with-disabilities-group-people-meeting-blind-female-character-male-wheelchair_16375447.htm#query=accessibility&position=5&from_view=search&track=sph" 
+                    target="_blank">
+                        pch.vector / Freepik 
+                    </a> 
+                </p>
+                <h3>Accessibility</h3>
+                <p class="cardText">Creating accessible web-pages was a key priority in developing this site to ensure that anyone 
+                    can use the service without major barriers.</p>
+                <a href="Accessibility.html">Show me more</a>
+            </div>
+            <div class="differentPageCard" id="lastPageCard">
+                <img src="images/techAndSosHome.png" alt="A man standing in a thinking position whilst playing chess with a 
+                robot arm">
+                <p class="cardImageText">
+                    Foto:
+                    <a href="https://www.pexels.com/nb-no/bilde/eldre-strategisk-spille-leke-8438918/"
+                    target="_blank">
+                    Pavel Danilyuk / Pexels
+                    </a>
+                </p>
+                <h3>Technology and society</h3>
+                <p class="cardText">A mandatory class for all computer science majors is technology and society, bu what can you learn...</p>
+                <a href="Topical.html">Show me more</a>
+            </div>
+        </div>
         <footer class="footer">
             <div class="footerText">
                 <p>Final Assignment</p>
