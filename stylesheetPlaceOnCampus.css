@@ -28,6 +28,9 @@
     /* Sets room between buttons which changes depending on screen size  */
     padding: 1.5rem;
  }
+ .poc-navKnapp a.active{
+    background-color: rgb(184, 150, 15);
+ }
  /* Sets rules for how the everything within the header tag works */
  header{
     /* Sticks to the screen */
