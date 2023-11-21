@@ -1,0 +1,173 @@
+ .poc-headermenu{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+ }
+ .poc-menybar{
+    background-color: rgb(228, 200, 123);
+    position: sticky;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+ }
+ .poc-menybar a{
+    color: black;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+ }
+ .poc-menybar a:hover{
+    background-color: rgb(184, 150, 15);
+ }
+.poc-menybar a.active{
+    background-color: rgb(184, 150, 15);
+}
+
+/* Lager en funskjon som heter topnav som vil være fundamentet til menybaren min
+jeg setter bakgrunnsfarge som gul, 
+width som 100% for at den strekker seg over hele skjermen,
+padding er 5px for mellomrom mellom knapper, 
+positsionen er sticky som gjør at den er på toppen av skjermen til en hver tid og h1 ikke forsvinner under menybaren,
+top er 0 som gjør at den alltid er helt på toppen av skjermen, 
+display er flex som lar meg bestemme hvor jeg vil at innholdet mitt skal være, 
+justify-content gjør at innholdet blir plassert i midten. */
+header{
+    background-color: rgb(228, 200, 123);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.topnav {
+    display: flex;
+    justify-content: center;
+  }
+  /* topnav a lar meg definere de enkelte knappene og de arver verdiene til topnav.
+  color gjør at skriften er svart, 
+  text-algin gjør at teksten er i midten av sitt omeråde,
+  padding definerer hvor mye "tomt" rom det er rundt skriften, 
+  og font-size sier hvor stor skriften er.  */
+  .topnav a {
+    color: black;
+    text-align: center;
+    padding: 19px 14px;
+    font-size: 17px;
+  }
+  /* Når du holder musepeker over en knapp skifter den farge til en mørkere gul. */
+  .topnav a:hover {
+    background-color: rgb(184, 150, 15);
+  }
+  /*Inspirert fra W3Schools https://www.w3schools.com/howto/howto_js_topnav.asp*/
+
+  /* I body har jeg satt margin til 0 sånn at bakgrunnsfargen går helt til enden av skjermen, 
+  en font som er universal for hele siden, 
+  og linje høyde sånn at teksten er lett leselig */
+body{
+    background-color: rgb(223, 214, 167);
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;  
+    font-size: 16px;       
+}
+/* h1 har en skrift størrelse på 100px. */
+h1{
+    font-size: 100px;
+    margin-left: 25px;
+}
+/* h2 har en skrift størrelse på 75px. */
+h2{
+    font-size: 75px;
+    margin: 5px;
+}
+/* font-size er 1.35vw som gjør at den justerer seg etter størrelsen på skjermen
+og teksten justerer seg etter størrelsen på skjermen og har en bredde på 600px */
+.poc-text{
+    font-size: 1.35vw;
+}
+/* footer blir satt i midten av skjermen */
+.poc-row-container{
+    margin: 20px;
+    text-align: center;
+    border-bottom: 1px;
+}
+.poc-row-grid2{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+/* Bildet justerer seg etter størrelesen på vinduet og har en størrelse på 80% */
+.poc-img{
+    object-fit: cover;
+    height: auto;
+    width: 80%;
+}
+.BGBlue{
+    background-color: rgb(124,152,228);
+    margin: -20px;
+}
+.BGTeal{
+    background-color: rgb(124,228,200);
+    margin: -20px;
+}
+.cite-size{
+    font-size: 0.8vw;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    padding: 1.5rem 0 3rem 0;
+
+    background-color: rgb(207, 254, 188);
+    border-top: 4px solid rgb(128, 188, 121);
+
+    font-size: 1.3rem;
+    text-align: center;
+ }
+ .footerText{
+    padding: 0 1.5rem 0 1.5rem;
+ }
+
+
+@media all and (max-width: 1000px) {
+    /* header endrer seg til å være under hverandre istedet for ved siden av hverandre */
+    header {
+        position: static;
+        display: block;
+        padding: 0.7rem 0;
+    }
+    /* h1 endrer til en mindre størrelse */
+    h1{
+        font-size: 50px;
+    }
+    /* h2 endrer til en mindre størrelse */
+    h2{
+        font-size: 25px;
+    }
+    /* p tar mindre bredde av skjermen */
+    p{
+        width: 250px;
+    }
+    /* alt innhold i .poc vil bli plassert under hverandre istedet for ved siden av hverandre */
+    .poc-row-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .poc-navKnapp a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
