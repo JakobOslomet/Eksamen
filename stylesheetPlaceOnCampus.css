@@ -1,173 +1,147 @@
- .poc-headermenu{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    text-align: center;
- }
- .poc-menybar{
+/* Poc-headermenu makes the foundation for the menubar. */
+.poc-headermenu{
     background-color: rgb(228, 200, 123);
-    position: sticky;
-    overflow: hidden;
+    /* Sets display to flex which allows us to decide where to place items */
     display: flex;
+    /* centers items to middel of screen vertically */
     justify-content: center;
+    /* Creats a darker yellow line underneath the menubar */
+    border-bottom: 4px solid rgb(184, 150, 15);
  }
- .poc-menybar a{
+ /* Poc-navKnapp makes the foundation of how big the buttons on our menu bar will be */
+ .poc-navKnapp{
+    /* How much room between top of menu bar and text */ 
+    padding-top: 1.5rem;
+    /* How much room between bottom of menu bar and text */ 
+    padding-bottom: 1.5rem;
+ }
+ /* Changes color when hovering over navKnapp */
+ .poc-navKnapp:hover{
+    background-color: rgb(184, 150, 15);
+ }
+ /* Poc-navKnapp sets rules for how each button on menu bar will look */
+ .poc-navKnapp a{
+    /* No underline under text */
+    text-decoration: none; 
     color: black;
-    padding: 1.5rem;
     font-size: 1.5rem;
+    /* Sets room between buttons which changes depending on screen size  */
+    padding: 1.5rem;
  }
- .poc-menybar a:hover{
-    background-color: rgb(184, 150, 15);
- }
-.poc-menybar a.active{
-    background-color: rgb(184, 150, 15);
-}
-
-/* Lager en funskjon som heter topnav som vil være fundamentet til menybaren min
-jeg setter bakgrunnsfarge som gul, 
-width som 100% for at den strekker seg over hele skjermen,
-padding er 5px for mellomrom mellom knapper, 
-positsionen er sticky som gjør at den er på toppen av skjermen til en hver tid og h1 ikke forsvinner under menybaren,
-top er 0 som gjør at den alltid er helt på toppen av skjermen, 
-display er flex som lar meg bestemme hvor jeg vil at innholdet mitt skal være, 
-justify-content gjør at innholdet blir plassert i midten. */
-header{
-    background-color: rgb(228, 200, 123);
+ /* Sets rules for how the everything within the header tag works */
+ header{
+    /* Sticks to the screen */
     position: sticky;
+    /* places header on the top of the screen */
     top: 0;
-    width: 100%;
-}
-.topnav {
-    display: flex;
-    justify-content: center;
-  }
-  /* topnav a lar meg definere de enkelte knappene og de arver verdiene til topnav.
-  color gjør at skriften er svart, 
-  text-algin gjør at teksten er i midten av sitt omeråde,
-  padding definerer hvor mye "tomt" rom det er rundt skriften, 
-  og font-size sier hvor stor skriften er.  */
-  .topnav a {
-    color: black;
-    text-align: center;
-    padding: 19px 14px;
-    font-size: 17px;
-  }
-  /* Når du holder musepeker over en knapp skifter den farge til en mørkere gul. */
-  .topnav a:hover {
-    background-color: rgb(184, 150, 15);
-  }
-  /*Inspirert fra W3Schools https://www.w3schools.com/howto/howto_js_topnav.asp*/
-
-  /* I body har jeg satt margin til 0 sånn at bakgrunnsfargen går helt til enden av skjermen, 
-  en font som er universal for hele siden, 
-  og linje høyde sånn at teksten er lett leselig */
+ }
+/* Sets rules for how everything within the body tag works */
 body{
     background-color: rgb(223, 214, 167);
+    /* body fills out entire screen */
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.5;  
-    font-size: 16px;       
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;       
 }
-/* h1 har en skrift størrelse på 100px. */
+/* Sets rules for how everything within the h1 tag works */
 h1{
-    font-size: 100px;
-    margin-left: 25px;
+    font-size: 4rem;    
 }
 /* h2 har en skrift størrelse på 75px. */
 h2{
-    font-size: 75px;
-    margin: 5px;
+    font-size: 3rem;
 }
 /* font-size er 1.35vw som gjør at den justerer seg etter størrelsen på skjermen
 og teksten justerer seg etter størrelsen på skjermen og har en bredde på 600px */
 .poc-text{
-    font-size: 1.35vw;
+    font-size: 1.35rem;
 }
-/* footer blir satt i midten av skjermen */
+/* Makes the foundation for containers placed in a row */
 .poc-row-container{
-    margin: 20px;
     text-align: center;
     border-bottom: 1px;
 }
+/* Makes a grid container and sets rules for it */
 .poc-row-grid2{
+    /* Sets display to grid */ 
     display: grid;
+    /* Make the grid in to two columns and sets the width to 40% on both */
     grid-template-columns: 40% 40%;
+    /* Sets the gap between the columns to 10px */
     column-gap: 10px;
+    /* Centers text and images in their columns */
     justify-content: center;
     justify-items: center;
-    margin-bottom: 20px;
 }
-.text-center{
-    text-align: center;
-}
+/* Makes text start from the left side */
 .text-left{
     text-align: left;
 }
-.text-right{
-    text-align: right;
-}
-/* Bildet justerer seg etter størrelesen på vinduet og har en størrelse på 80% */
+/* Adjusts pictures to size of screen */
 .poc-img{
+    /* Covers entiere container */
     object-fit: cover;
+    /* Width and height is at 80% */
     height: auto;
     width: 80%;
 }
+/* Sets background color */
 .BGBlue{
     background-color: rgb(124,152,228);
-    margin: -20px;
+
 }
+/* Sets background color */
 .BGTeal{
     background-color: rgb(124,228,200);
-    margin: -20px;
+
 }
+/* Sets font size */
 .cite-size{
-    font-size: 0.8vw;
+    font-size: 1rem;
 }
+/* Sets rules for how items in the footer tag works */
 footer{
     display: flex;
     justify-content: center;
+    /* Sets footer at the bottom of the page */
     bottom: 0;
+    /* Sets how much room there is around the items in footer */
     padding: 1.5rem 0 3rem 0;
 
-    background-color: rgb(207, 254, 188);
-    border-top: 4px solid rgb(128, 188, 121);
+    background-color: rgb(228, 200, 123);
+    border-top: 4px solid rgb(184, 150, 15);
 
     font-size: 1.3rem;
     text-align: center;
  }
- .footerText{
-    padding: 0 1.5rem 0 1.5rem;
- }
-
-
+/* @Media adjusts content depending on screen size */
 @media all and (max-width: 1000px) {
-    /* header endrer seg til å være under hverandre istedet for ved siden av hverandre */
-    header {
-        position: static;
-        display: block;
-        padding: 0.7rem 0;
-    }
-    /* h1 endrer til en mindre størrelse */
+/* Header dosent stick to screen anymore but stays on the top of the page */
+header{
+    position: static;
+}
+/* Menu bar isnt in place horizontally but vertically */
+.poc-headermenu{
+    flex-direction: column;
+    align-items: center;
+}
+
+    /* h1 changes font size */
     h1{
         font-size: 50px;
     }
-    /* h2 endrer til en mindre størrelse */
+    /* h2 changes font size */
     h2{
         font-size: 25px;
     }
-    /* p tar mindre bredde av skjermen */
+    /* p changes how much room it takes up horizontally */
     p{
-        width: 250px;
+        width: 400px;
     }
-    /* alt innhold i .poc vil bli plassert under hverandre istedet for ved siden av hverandre */
-    .poc-row-container{
+    /* content in containers stacks vertically instead horizontally */
+    .poc-row-grid2{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20px;
-    }
-    .poc-navKnapp a {
-        display: block;
-        margin-bottom: 10px;
     }
 }
