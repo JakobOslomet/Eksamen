@@ -49,6 +49,7 @@ and changes color to black instead of blue like links and sets fontsize*/
    text-decoration: none;
    color: black;
    font-size: 1.5rem;
+   padding: 1.5rem;
 }
 /*changes a element text color a of navigation to active page to white*/
 .activePage a{
