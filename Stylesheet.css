@@ -59,7 +59,7 @@ header{
    display: grid;
    grid-template-columns: 100%;
    grid-gap: 3rem;
-   margin: 0 20vw 5vh 20vw ;
+   margin: 0 20vw 20vh 20vw ;
 }
 
 .differentPageCard{
@@ -166,7 +166,7 @@ header{
    .gridOfDifferentPages{
        grid-template-columns: 100%;
        grid-gap: 2rem;
-       margin: 0 20vw 5vh 20vw ;
+       margin: 0 20vw 20vh 20vw ;
    }
    .footer{
        flex-direction: column;
@@ -183,6 +183,6 @@ header{
    .gridOfDifferentPages{
        grid-template-columns: 31% 31% 31%;
        grid-gap: 4.5%;
-       margin: 0 10vw 5vh 10vw;
+       margin: 0 10vw 20vh 10vw;
    }
 }
