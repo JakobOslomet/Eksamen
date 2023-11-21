@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
+    <!--semantic element not visible on page-->
     <head>
-        <title>Velkommen til Pilstredet 35</title>
+        <title>Home-page</title>
+        <!--defines viewport settings, page width of device, intially no zoom --> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Stylesheet.css">
     </head>
     <body>
+        <!--semantic element for header of page-->
         <header>
             <nav class="headermenu">
+                <!--navigation to different pages--> 
                 <div class="activePage">
                     <a href="index.html">Home</a>
                 </div>
@@ -22,76 +26,83 @@
                 </div>
             </nav>
         </header>
-        <article class="article">
-            <img class="introImage" src="bilder/introductionBilde copy.png" alt="lettering display of OsloMet at Pilstredet">
-            <p class="introImageText">Foto:
-                <a href="https://www.oslomet.no/om/sva/om-sva" target="_blank">
-                    OsloMet
-                </a>
-            </p>
-            <h1>Computer Science Student</h1>
-            <h2>A brief insight into the life of a computer science major at OsloMet</h2>
-            <p class="articleText">Have you ever wondered what life is like as student studying computer sciences? 
-                Well for one, we sites like one you are visiting now. An important feature of web-pages 
-                is that they have to be accessible for different users, which among other things 
-                includes being scaleble for different screen-sizes. But we do not only learn about web-design, 
-                all first-year students have to complete technology and society, a course which, as the name suggests, 
-                is about the connection between technology and society.
-            </p>
-            <p class="articleText">Now that you know some of the syllabus for 
-                first-year students, you might wonder where they spend their time whilst studying for the classes. 
-                The area dedicated to IT students on the fourth floor of Ellen Gledischs hus is an ideal gathering place for group
-                assigments or individual work. </p>
-            <h2>Looking for more?</h2>
-            <p class="articleText"> If you feel that the information provided above won't satisfy your craving for knowledge, you can 
-                visit one of our other pages below. There we go into more detail for all the topics mentioned in the
-                paragraph above.  
-            </p>
-        </article>
-        <div class="gridOfDifferentPages">
-            <div class="differentPageCard">
-                <img src="bilder/placeOnCampus.png" alt="students sitting together at a table studying at their campus">
-                <p class="cardImageText">
-                    Foto:
-                    <a href="https://www.freepik.com/free-photo/student-sharing-her-knowledge-with-her-colleagues_12115505.htm#query=campus&position=15&from_view=search&track=sph&uuid=533afc60-c186-4dcb-83ea-29f9009f0f8f" 
-                    target="_blank">
-                        gpointstudio / Freepik 
+        <!--Contains all content-->
+        <main>
+            <!--Tag for article inside main tag-->
+            <article>
+                <!--alt text displayed if image is not loaded, improved accessibility and SEO-->
+                <img class="introImage" src="bilder/introductionBilde copy.png" alt="lettering display of OsloMet at Pilstredet">
+                <p class="introImageText">Foto:
+                    <!--target="_blank" opens the page on new window or page-->
+                    <a href="https://www.oslomet.no/om/sva/om-sva" target="_blank">
+                        OsloMet
                     </a>
                 </p>
-                <h3>A Place on Campus</h3>
-                <p class="cardText">Have you ever whondered where computer science majors spend their time at the univercity...</p>
-                <a href="PlaceOnCampus.html">Show me more</a>
-            </div>
-            <div class="differentPageCard">
-                <img src="bilder/accessibilityHome.png" alt="6 animated people, including one person in a wheelchair
-                 and one blind person, are standing together supposed to illustrate the idea of accessibility.">
-                <p class="cardImageText">
-                    Foto: 
-                    <a href="https://www.freepik.com/free-vector/men-women-welcoming-people-with-disabilities-group-people-meeting-blind-female-character-male-wheelchair_16375447.htm#query=accessibility&position=5&from_view=search&track=sph" 
-                    target="_blank">
-                        pch.vector / Freepik 
-                    </a> 
+                <h1>Computer Science Student</h1>
+                <h2>A brief insight into the life of a computer science major at OsloMet</h2>
+                <p>Have you ever wondered what life is like as student studying computer sciences? 
+                    Well for one, we sites like one you are visiting now. An important feature of web-pages 
+                    is that they have to be accessible for different users, which among other things 
+                    includes being scaleble for different screen-sizes. But we do not only learn about web-design, 
+                    all first-year students have to complete technology and society, a course which, as the name suggests, 
+                    is about the connection between technology and society.
                 </p>
-                <h3>Accessibility</h3>
-                <p class="cardText">Creating accessible web-pages was a key priority in developing this site to ensure that anyone 
-                    can use the service without major barriers.</p>
-                <a href="Accessibility.html">Show me more</a>
-            </div>
-            <div class="differentPageCard" id="lastPageCard">
-                <img src="bilder/techAndSosHome.png" alt="A man standing in a thinking position whilst playing chess with a 
-                robot arm">
-                <p class="cardImageText">
-                    Foto:
-                    <a href="https://www.pexels.com/nb-no/bilde/eldre-strategisk-spille-leke-8438918/"
-                    target="_blank">
-                    Pavel Danilyuk / Pexels
-                    </a>
+                <p>Now that you know some of the syllabus for 
+                    first-year students, you might wonder where they spend their time whilst studying for the classes. 
+                    The area dedicated to IT students on the fourth floor of Ellen Gledischs hus is an ideal gathering place for group
+                    assigments or individual work. </p>
+                <h2>Looking for more?</h2>
+                <p> If you feel that the information provided above won't satisfy your craving for knowledge, you can 
+                    visit one of our other pages below. There we go into more detail for all the topics mentioned in the
+                    paragraph above.  
                 </p>
-                <h3>Technology and society</h3>
-                <p class="cardText">A mandatory class for all computer science majors is technology and society, bu what can you learn...</p>
-                <a href="Topical.html">Show me more</a>
+            </article>
+            <div class="gridOfDifferentPages">
+                <div class="differentPageCard">
+                    <img src="bilder/placeOnCampus.png" alt="students sitting together at a table studying at their campus">
+                    <p class="cardImageText">
+                        Foto:
+                        <a href="https://www.freepik.com/free-photo/student-sharing-her-knowledge-with-her-colleagues_12115505.htm#query=campus&position=15&from_view=search&track=sph&uuid=533afc60-c186-4dcb-83ea-29f9009f0f8f" 
+                        target="_blank">
+                            gpointstudio / Freepik 
+                        </a>
+                    </p>
+                    <h3>A Place on Campus</h3>
+                    <p class="cardText">Have you ever whondered where computer science majors spend their time at the univercity...</p>
+                    <a href="PlaceOnCampus.html">Show me more</a>
+                </div>
+                <div class="differentPageCard">
+                    <img src="bilder/accessibilityHome.png" alt="6 animated people, including one person in a wheelchair
+                     and one blind person, are standing together supposed to illustrate the idea of accessibility.">
+                    <p class="cardImageText">
+                        Foto: 
+                        <a href="https://www.freepik.com/free-vector/men-women-welcoming-people-with-disabilities-group-people-meeting-blind-female-character-male-wheelchair_16375447.htm#query=accessibility&position=5&from_view=search&track=sph" 
+                        target="_blank">
+                            pch.vector / Freepik 
+                        </a> 
+                    </p>
+                    <h3>Accessibility</h3>
+                    <p class="cardText">Creating accessible web-pages was a key priority in developing this site to ensure that anyone 
+                        can use the service without major barriers.</p>
+                    <a href="Accessibility.html">Show me more</a>
+                </div>
+                <div class="differentPageCard" id="lastPageCard">
+                    <img src="bilder/techAndSosHome.png" alt="A man standing in a thinking position whilst playing chess with a 
+                    robot arm">
+                    <p class="cardImageText">
+                        Foto:
+                        <a href="https://www.pexels.com/nb-no/bilde/eldre-strategisk-spille-leke-8438918/"
+                        target="_blank">
+                        Pavel Danilyuk / Pexels
+                        </a>
+                    </p>
+                    <h3>Technology and society</h3>
+                    <p class="cardText">A mandatory class for all computer science majors is technology and society, bu what can you learn...</p>
+                    <a href="Topical.html">Show me more</a>
+                </div>
             </div>
-        </div>
+        </main>
+        <!--contains the footer for the page-->
         <footer class="footer">
             <div class="footerText">
                 <p>Final Assignment</p>

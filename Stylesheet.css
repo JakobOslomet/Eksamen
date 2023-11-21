@@ -1,105 +1,129 @@
+/* element selector for all elements in body, margin ensures no space 
+between header/footer and top/bottom of page*/
 body{
    margin: 0;
-   padding: 0;
    font-family: Arial, Helvetica, sans-serif;
    line-height: 1.5;         
 }
+/* font size for all h1 elements in html*/
 h1{
    font-size: 2.5rem;
 }
+/* font size for all h2 elements in html*/
 h2{
    font-size: 1.5rem;
 }
+/*element selector for all elements inside header */
 header{
+   /*positions header at the top of the page even when scrolling*/
    position: sticky;
+   /*special element for position ensuring no space between top of page and header*/
    top:0;
+   /*text aligned in the center when navKnapp stack on top of eachother*/
+   text-align: center;
    background-color: rgb(207, 254, 188);
+   /*Targets bottom border, width of 4px, a solid line and given color*/
+   border-bottom: 4px solid rgb(128, 188, 121);
 }
+/*targets the layout of naKnapp, aligning boxes to the center*/
 .headermenu{
    display: flex;
    justify-content: center;
-   border-bottom: 4px solid rgb(128, 188, 121);
-   text-align: center;
 }
+/*targets space inside of container for navigation to different pages*/
 .navKnapp{
-   padding-top: 1.5rem;
-   padding-bottom: 1.5rem;
+   padding: 1.5rem;
 }
+/*changes color when hovering*/
 .navKnapp:hover{
    background-color: rgb(24, 62, 21);
 }
+/* displays the navigation button for the active page differently*/
 .activePage{
-   padding-top: 1.5rem;
-   padding-bottom: 1.5rem;
+   padding: 1.5rem;
    background-color: rgb(24, 62, 21);
 }
+/* targets the a elements of navKnapp and activePage, removes underline
+and changes color to black instead of blue like links and sets fontsize*/
 .navKnapp a, .activePage a{
    text-decoration: none;
    color: black;
    font-size: 1.5rem;
-   padding: 1.5rem;
 }
+/*changes a element text color a of navigation to active page to white*/
 .activePage a{
    color: white;
 }
+/*changes text color to white for contrast to hover color*/
 .navKnapp a:hover{
    color: white;
 }
-.article{
-   box-sizing: border-box; 
+/*targets all html within article element, margin for space outside of 
+article element, space dependent on viewport width for side margin*/
+article{
    margin: 1rem 10vw 5rem 10vw;
    font-size: 1.2rem;         
 }
+/*scales image to 100% of of article element width*/
 .introImage{
    width: 100%
 }
-.introImageText, .introImageText>a{
+/*targets image-texts and a elements of p element with this class
+to 80.1% opacity of color blac, removes text decoration for link, places text close
+to image with 0 margin and sets a smaller font size*/
+.introImageText, .introImageText>a, .cardImageText, .cardImageText>a{
    color: rgba(0, 0, 0, 0.801);
    text-decoration: none;
    margin: 0;
    font-size: 1rem;
 }
-.introImageText>a:hover{
+/* text with link to image source gets underline when hover*/
+.introImageText>a:hover, .cardImageText>a:hover{
    text-decoration: underline;
    
 }
+/*targets layout of cards for different pages to defaul of 1 card per row,
+sets gap between cards to 3 rem, margin sets space outside of card grid
+dependent on viewport width and height*/
 .gridOfDifferentPages{
    display: grid;
    grid-template-columns: 100%;
    grid-gap: 3rem;
    margin: 0 20vw 20vh 20vw ;
 }
-
+/*targets layout inside of cards, display of flex and colum de\irection
+stacks content on top of eachother, sets width of conent equal to card size-padding
+gives box a shadow of 4px down and right and 4px blur and colors of black opacity 30%*/
 .differentPageCard{
    display: flex;
    flex-direction: column;
-   box-sizing: border-box;
    border: 3px solid rgba(0, 0, 0, 0.6);
    padding: 1.5rem;
    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3) ;
 }
-
+/*sets image inside of card to width of container and height according to 
+width*/
 .differentPageCard>img{
    max-width: 100%;
    height: auto;
 }
+/*sets smaller font size for image text of images in card comtainer*/
 .cardImageText, .cardImageText>a{
-   color: rgba(0, 0, 0, 0.801);
-   text-decoration: none;
-   font-size: 1rem;
-   margin: 0;
+   font-size: 0.8rem;
 }
-.cardImageText>a:hover{
-   text-decoration: underline;
-}
-
+/* h3 level headings inside cards set to 1rem font size and smaller margin 
+than standard for headings*/
 .differentPageCard>h3{
    margin-bottom: 0.5rem;
    margin-top: 1rem;
 }
+/*margin smaller than initial for paragraph element, closer to header*/
 .cardText{
    margin-top:0;
 }
+/*sets the "show me more" button of card to bottom of card, background color
+removes text decoration, centers the texts and sets color to black. 
+sets space incide of text container, adds border and color and adds a shadow*/ 
 .differentPageCard>a{
    margin-top: auto;
    background-color: rgb(207, 254, 188);
@@ -109,14 +133,17 @@ header{
    text-align: center;
 
    padding: 0.5rem;
-   border:  solid rgb(128, 188, 121);
+   border: 3px solid rgb(128, 188, 121);
    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-   
 }
+/* changes color of card "show me more" button when hovering as well as
+text color*/
 .differentPageCard>a:hover{
    background-color: rgb(24, 62, 21);
    color: white;
 }
+/*standars for footer layout to centered flex display, positions footer
+to bottom of page and adds space inside of footer*/
 .footer{
    display: flex;
    justify-content: center;
@@ -129,14 +156,17 @@ header{
    font-size: 1.3rem;
    text-align: center;
 }
+/* sets space between p elements inside footer*/
 .footerText{
    padding: 0 1.5rem 0 1.5rem;
 }
 /*different screen sizes*/
 @media all and (max-width:500px){
+   /*positions header to top of page, can scroll past*/
    header{
       position: static;
    }
+   /*stack navigation on top of eachother*/
    .headermenu{
       flex-direction: column;
    }
@@ -153,6 +183,7 @@ header{
    .differentPageCard{
        padding: 1rem;
    }
+   /*stacks footer p elements on top of eachother*/
    .footer{
        flex-direction: column;
    }
@@ -188,6 +219,7 @@ header{
    .article{
        margin: 1rem 20vw 5rem 20vw;
    }
+   /* sets cards 3 next to eachother with gap of 4,5% of container*/
    .gridOfDifferentPages{
        grid-template-columns: 31% 31% 31%;
        grid-gap: 4.5%;
