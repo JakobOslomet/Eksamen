@@ -32,7 +32,8 @@ header{
 }
 /*targets space inside of container for navigation to different pages*/
 .navKnapp{
-   padding: 1.5rem;
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
 }
 /*changes color when hovering*/
 .navKnapp:hover{
@@ -40,7 +41,8 @@ header{
 }
 /* displays the navigation button for the active page differently*/
 .activePage{
-   padding: 1.5rem;
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
    background-color: rgb(24, 62, 21);
 }
 /* targets the a elements of navKnapp and activePage, removes underline
