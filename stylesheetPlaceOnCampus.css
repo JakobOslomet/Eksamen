@@ -1,12 +1,12 @@
 /* Poc-headermenu makes the foundation for the menubar. */
 .poc-headermenu{
-    background-color: rgb(228, 200, 123);
     /* Sets display to flex which allows us to decide where to place items */
     display: flex;
     /* centers items to middel of screen vertically */
     justify-content: center;
     /* Creats a darker yellow line underneath the menubar */
     border-bottom: 4px solid rgb(184, 150, 15);
+    text-align: center;
  }
  /* Poc-navKnapp makes the foundation of how big the buttons on our menu bar will be */
  .poc-navKnapp{
@@ -19,21 +19,23 @@
  .poc-navKnapp:hover{
     background-color: rgb(184, 150, 15);
  }
- /* Poc-navKnapp sets rules for how each button on menu bar will look */
- .poc-navKnapp a{
-    /* No underline under text */
-    text-decoration: none; 
-    color: black;
-    font-size: 1.5rem;
-    /* Sets room between buttons which changes depending on screen size  */
-    padding: 1.5rem;
- }
  /* sets color to dark yellow */
- .poc-navKnapp .active{
+ .active{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     background-color: rgb(184, 150, 15);
+ }
+ .poc-navKnapp a, .active a{
+        /* No underline under text */
+        text-decoration: none; 
+        color: black;
+        font-size: 1.5rem;
+        /* Sets room between buttons which changes depending on screen size  */
+        padding: 1.5rem;
  }
  /* Sets rules for how the everything within the header tag works */
  header{
+    background-color: rgb(228, 200, 123);
     /* Sticks to the screen */
     position: sticky;
     /* places header on the top of the screen */
@@ -44,6 +46,7 @@ body{
     background-color: rgb(223, 214, 167);
     /* body fills out entire screen */
     margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;       
 }
@@ -127,7 +130,6 @@ header{
 /* Menu bar isnt in place horizontally but vertically */
 .poc-headermenu{
     flex-direction: column;
-    align-items: center;
 }
 
     /* h1 changes font size */
@@ -147,5 +149,8 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .poc-navKnapp, .active{
+        padding: 0.7rem 0 0.7rem 0;
     }
 }
