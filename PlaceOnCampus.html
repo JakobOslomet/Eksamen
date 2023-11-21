@@ -2,13 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--semantic element not visible on page-->
     <title>Place On Campus</title>
+    <!--defines viewport settings, page width of device, intially no zoom --> 
     <link rel="stylesheet" href="stylesheetPlaceOnCampus.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <!--semantic element for header of page-->
     <header>
       <nav class="poc-headermenu">
+        <!--navigation to different pages--> 
           <div class="poc-navKnapp">
             <a href="index.html">Home</a>
           </div>
@@ -23,14 +27,42 @@
           </div>
       </nav>
     </header>
-    <div class="poc-row-container">
-      <h1>Some Places Around OsloMet P35</h1>
-    </div>
-    <div class="poc-row-container BGBlue">
-      <div class="poc-row-grid2">
-        <div><h2>Pilestredet 35</h2></div>
-        <div></div>
-        <div class="text-left">
+    <!--Contains all content-->
+    <main>
+      <div class="poc-row-container">
+        <h1>Some Places Around OsloMet P35</h1>
+      </div>
+      <div class="poc-row-container BGBlue">
+        <div class="poc-row-grid2">
+          <div><h2>Pilestredet 35</h2></div>
+          <div></div>
+          <div class="text-left">
+              <p class="poc-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia mi pretium rhoncus ornare. 
+                Quisque arcu libero, varius vitae interdum non, aliquam nec urna. Etiam blandit gravida justo. 
+                Duis orci quam, ornare eget risus at, tincidunt faucibus eros. Nullam sed dolor aliquam, condimentum justo sed, 
+                ultricies lacus. Duis ornare magna augue, vel eleifend felis faucibus sit amet. Etiam ligula augue, 
+                pulvinar a nisl et, fringilla sagittis nisi. Aliquam erat volutpat. Cras volutpat lorem ut enim pharetra, 
+                ut suscipit ex tincidunt. Vivamus arcu lectus, molestie rutrum tempus malesuada, vestibulum vitae nisi. 
+                Donec dignissim consectetur nisi, a tempus justo ornare et. Suspendisse in tincidunt purus, vitae tempus lorem.
+              </p>
+          </div>
+          <div>
+            <img class="poc-img" src="bilder/oslomet_p35.jpeg" alt="OsloMet P35 inngang">
+            <p class="cite-size"><cite>Entrance To OsloMet P35</cite> by Mia Engenes Bratlie.</p>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="poc-row-container BGTeal">
+        <div class="poc-row-grid2">
+          <div></div>
+          <div><h2>Cantina</h2></div>
+          <div>
+            <img class="poc-img" src="bilder/KantineBilde1.jpeg" alt="Bilde av kantine">
+            <p class="cite-size"><cite>Cantina at OsloMet P35</cite> By OsloMet.</p>
+          </div>
+          <div class="text-left">
             <p class="poc-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia mi pretium rhoncus ornare. 
               Quisque arcu libero, varius vitae interdum non, aliquam nec urna. Etiam blandit gravida justo. 
@@ -40,56 +72,32 @@
               ut suscipit ex tincidunt. Vivamus arcu lectus, molestie rutrum tempus malesuada, vestibulum vitae nisi. 
               Donec dignissim consectetur nisi, a tempus justo ornare et. Suspendisse in tincidunt purus, vitae tempus lorem.
             </p>
-        </div>
-        <div>
-          <img class="poc-img" src="bilder/oslomet_p35.jpeg" alt="OsloMet P35 inngang">
-          <p class="cite-size"><cite>Entrance To OsloMet P35</cite> by Mia Engenes Bratlie.</p>
-        </div>
-        <div></div>
-      </div>
-    </div>
-    <div class="poc-row-container BGTeal">
-      <div class="poc-row-grid2">
-        <div></div>
-        <div><h2>Cantina</h2></div>
-        <div>
-          <img class="poc-img" src="bilder/KantineBilde1.jpeg" alt="Bilde av kantine">
-          <p class="cite-size"><cite>Cantina at OsloMet P35</cite> By OsloMet.</p>
-        </div>
-        <div class="text-left">
-          <p class="poc-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia mi pretium rhoncus ornare. 
-            Quisque arcu libero, varius vitae interdum non, aliquam nec urna. Etiam blandit gravida justo. 
-            Duis orci quam, ornare eget risus at, tincidunt faucibus eros. Nullam sed dolor aliquam, condimentum justo sed, 
-            ultricies lacus. Duis ornare magna augue, vel eleifend felis faucibus sit amet. Etiam ligula augue, 
-            pulvinar a nisl et, fringilla sagittis nisi. Aliquam erat volutpat. Cras volutpat lorem ut enim pharetra, 
-            ut suscipit ex tincidunt. Vivamus arcu lectus, molestie rutrum tempus malesuada, vestibulum vitae nisi. 
-            Donec dignissim consectetur nisi, a tempus justo ornare et. Suspendisse in tincidunt purus, vitae tempus lorem.
-          </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="poc-row-container BGBlue">
-      <div class="poc-row-grid2">
-        <div><h2>Climbing Wall</h2></div>
-        <div></div>
-        <div class="text-left">
-            <p class="poc-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia mi pretium rhoncus ornare. 
-              Quisque arcu libero, varius vitae interdum non, aliquam nec urna. Etiam blandit gravida justo. 
-              Duis orci quam, ornare eget risus at, tincidunt faucibus eros. Nullam sed dolor aliquam, condimentum justo sed, 
-              ultricies lacus. Duis ornare magna augue, vel eleifend felis faucibus sit amet. Etiam ligula augue, 
-              pulvinar a nisl et, fringilla sagittis nisi. Aliquam erat volutpat. Cras volutpat lorem ut enim pharetra, 
-              ut suscipit ex tincidunt. Vivamus arcu lectus, molestie rutrum tempus malesuada, vestibulum vitae nisi. 
-              Donec dignissim consectetur nisi, a tempus justo ornare et. Suspendisse in tincidunt purus, vitae tempus lorem.
-            </p>
-        </div>
-        <div>
-          <img class="poc-img" src="bilder/P35KlatreVegg.jpeg" alt="Klatrevegg på P35">
-          <p class="cite-size"><cite>Johannes Malman har lenge hatt lyst til å klatre for å utfordre sine egne grenser</cite> by Andrea Evjen.</p>
-        </div>
-      </div>  
-    </div>
+      <div class="poc-row-container BGBlue">
+        <div class="poc-row-grid2">
+          <div><h2>Climbing Wall</h2></div>
+          <div></div>
+          <div class="text-left">
+              <p class="poc-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia mi pretium rhoncus ornare. 
+                Quisque arcu libero, varius vitae interdum non, aliquam nec urna. Etiam blandit gravida justo. 
+                Duis orci quam, ornare eget risus at, tincidunt faucibus eros. Nullam sed dolor aliquam, condimentum justo sed, 
+                ultricies lacus. Duis ornare magna augue, vel eleifend felis faucibus sit amet. Etiam ligula augue, 
+                pulvinar a nisl et, fringilla sagittis nisi. Aliquam erat volutpat. Cras volutpat lorem ut enim pharetra, 
+                ut suscipit ex tincidunt. Vivamus arcu lectus, molestie rutrum tempus malesuada, vestibulum vitae nisi. 
+                Donec dignissim consectetur nisi, a tempus justo ornare et. Suspendisse in tincidunt purus, vitae tempus lorem.
+              </p>
+          </div>
+          <div>
+            <img class="poc-img" src="bilder/P35KlatreVegg.jpeg" alt="Klatrevegg på P35">
+            <p class="cite-size"><cite>Johannes Malman har lenge hatt lyst til å klatre for å utfordre sine egne grenser</cite> by Andrea Evjen.</p>
+          </div>
+        </div>  
+      </div>
+    </main>
+    <!--contains the footer for the page-->
     <footer>
       <div class="footerText">
         Final Assignment | Data 1200 | OsloMet Høst 2023
