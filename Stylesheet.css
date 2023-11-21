@@ -160,6 +160,21 @@ to bottom of page and adds space inside of footer*/
 .footerText{
    padding: 0 1.5rem 0 1.5rem;
 }
+.boxlink {
+   box-shadow: 2px 2px 4px grey;
+   padding: 10px;
+   text-align: center;
+   font-size: larger;
+   border: color(black 0 0 0);
+   margin-bottom: 20px;
+   background-color: lightgray;
+
+}
+.boxlink:hover {
+   cursor: pointer;
+   background-color: rgb(207, 254, 188);
+   color: black;
+}
 /*different screen sizes*/
 @media all and (max-width:500px){
    /*positions header to top of page, can scroll past*/
