@@ -161,20 +161,29 @@ to bottom of page and adds space inside of footer*/
 .footerText{
    padding: 0 1.5rem 0 1.5rem;
 }
+/* style for elements with class code "boxlink"*/
 .boxlink {
-   box-shadow: 2px 2px 4px grey;
-   padding: 10px;
-   text-align: center;
-   font-size: larger;
-   border: color(black 0 0 0);
-   margin-bottom: 20px;
-   background-color: lightgray;
-
+/* adds shadow for around the element*/
+box-shadow: 2px 2px 4px grey;
+/* adds space between all sides to make the box larger, 10 pixels*/
+padding: 10px;
+/* centers the text inside the box */
+text-align: center;
+/* makes the font size larger to make it easier to read */
+font-size: larger;
+/* makes the border color black */
+border-color: black;
+/* makes the background color gray, to make it easier to read */
+background-color: lightgray;
 }
+/* style for elements with class "boxlink" when hovered over */
 .boxlink:hover {
-   cursor: pointer;
-   background-color: rgb(207, 254, 188);
-   color: black;
+/* changes the cursor to a pointer */
+cursor: pointer;
+/* changes the background color when hovered*/
+background-color: rgb(207, 254, 188);
+/* changes the wirting to black when hovered */
+color: black;
 }
 /*different screen sizes*/
 @media all and (max-width:500px){
