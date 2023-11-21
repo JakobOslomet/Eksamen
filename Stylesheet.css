@@ -28,11 +28,19 @@ header{
 .navKnapp:hover{
    background-color: rgb(24, 62, 21);
 }
-.navKnapp a{
+.activePage{
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   background-color: rgb(24, 62, 21);
+}
+.navKnapp a, .activePage a{
    text-decoration: none;
    color: black;
    font-size: 1.5rem;
    padding: 1.5rem;
+}
+.activePage a{
+   color: white;
 }
 .navKnapp a:hover{
    color: white;
